@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-green-800 p-4">
+    <nav className="bg-green-800 p-4 pr-12 pl-5">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-12" />
@@ -37,7 +37,7 @@ const Navbar = () => {
               location.pathname === "/" ? "text-gray-300" : ""
             }`}
           >
-            Home
+            Beranda
           </Link>
           {location.pathname !== "/arsip" && (
             <Link to="/arsip" className={`text-white hover:text-gray-300 `}>
@@ -91,7 +91,6 @@ const Navbar = () => {
                   to="/pesantren/gedung"
                   className="block px-4 py-2 hover:text-gray-300"
                 >
-                  
                   Data Pondok Pesantren
                 </Link>
                 <Link
@@ -137,7 +136,6 @@ const Sidebar = () => {
         { title: "Pengurus Cabang", path: "/pengurus/kepala" },
         { title: "Mantan Pengurus Cabang", path: "/pengurus/wakil" },
         { title: "MWCNU Kecamatan", path: "/pengurus/kepala" },
-        
       ],
     },
     {
@@ -165,14 +163,14 @@ const Sidebar = () => {
       <div className="p-4">
         <ul className="mt-8 space-y-4">
           <li>
-            <Link
-              to="/"
-              className={`block hover:text-gray-300 ${
-                location.pathname === "/" ? "text-gray-300" : ""
-              }`}
-            >
-              Home
-            </Link>
+          <Link
+            to="/"
+            className={`text-white hover:text-gray-300 ${
+              location.pathname === "/" ? "text-gray-300" : ""
+            }`}
+          >
+            Beranda
+          </Link>
           </li>
           <li>
             {location.pathname !== "/arsip" && (

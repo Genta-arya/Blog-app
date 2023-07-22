@@ -17,22 +17,27 @@ const Navbars = () => {
     <nav className="bg-green-800 py-4 px-6">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
+          
           <Link to="/">
             <img src={logo} alt="My Blog" className="h-12" />
           </Link>
           <div className="hidden md:block">
+          {location.pathname !== "/" && (
             <Link
               to="/"
               className="   text-gray-300 hover:text-white px-3 py-2 rounded"
             >
-              Home
+              Beranda
             </Link>
+          )}
+          {location.pathname !== "/blog" && (
             <Link
-              to="/"
+              to="/blog"
               className="text-gray-300 hover:text-white px-3 py-2 rounded"
             >
-              Tentang NU
+              Artikel
             </Link>
+          )}
             <Link
               to="/"
               className="text-gray-300 hover:text-white px-3 py-2 rounded"
@@ -79,18 +84,22 @@ const Navbars = () => {
                 </button>
               </div>
               <div className="flex flex-col mt-8">
+              {location.pathname !== "/" && (
                 <Link
                   to="/"
                   className="text-gray-300 hover:text-white px-4 py-2 rounded"
                 >
-                  Home
+                  Beranda
                 </Link>
+              )}
+               {location.pathname !== "/blog" && (
                 <Link
-                  to="/"
+                  to="/blog"
                   className="text-gray-300 hover:text-white px-4 py-2 rounded"
                 >
-                  Tentang NU
+                  Artikel
                 </Link>
+               )}
 
                 <Link
                   to="/"

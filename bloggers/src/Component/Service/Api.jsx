@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://192.168.1.22:3001';
+const API_BASE_URL = 'http://192.168.1.27:3001';
 
 // Fungsi untuk melakukan permintaan login
 export const login = async (email, password) => {

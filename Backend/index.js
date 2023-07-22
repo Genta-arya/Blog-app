@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 3001;
 const cors = require("cors");
-const API = "192.168.1.22"
+const API = "192.168.1.9"
 app.use(cors());
 app.use(bodyParser.json());
 

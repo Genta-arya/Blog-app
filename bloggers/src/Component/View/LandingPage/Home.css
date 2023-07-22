@@ -1,0 +1,41 @@
+/* Home.css */
+/* ... (previously provided styles) ... */
+
+/* Header Animation */
+.header-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  .header-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .header-exit {
+    opacity: 1;
+  }
+  .header-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  /* Content Grid Animation */
+  .content-grid-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .content-grid-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .content-grid-exit {
+    opacity: 1;
+  }
+  .content-grid-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  

@@ -62,7 +62,7 @@ const SearchNavbar = ({ setCategoryFilter, setSearchQuery, postings }) => {
               {showCategoryDropdown && (
                 <div className="absolute bg-white mt-2 py-2 w-32 rounded shadow-lg">
                   <Link
-                    to="/"
+                    to="/blog"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                     onClick={() => handleCategoryFilter("Semua")}
                   >
@@ -71,7 +71,7 @@ const SearchNavbar = ({ setCategoryFilter, setSearchQuery, postings }) => {
                   {categories.map((category) => (
                     <Link
                       key={category}
-                      to={`/?category=${category}`}
+                      to={`/blog/?category=${category}`}
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                       onClick={() => handleCategoryFilter(category)}
                     >
@@ -92,7 +92,7 @@ const SearchNavbar = ({ setCategoryFilter, setSearchQuery, postings }) => {
               {showGalleryDropdown && (
                 <div className="absolute bg-white mt-2 py-2 w-32 rounded shadow-lg">
                   <Link
-                    to="/"
+                    to="/blog"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                     onClick={() => {
                       setShowGalleryDropdown(false);
@@ -101,7 +101,7 @@ const SearchNavbar = ({ setCategoryFilter, setSearchQuery, postings }) => {
                     Foto
                   </Link>
                   <Link
-                    to="/"
+                    to="/blog"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                     onClick={() => {
                       setShowGalleryDropdown(false);
@@ -110,7 +110,7 @@ const SearchNavbar = ({ setCategoryFilter, setSearchQuery, postings }) => {
                     Video
                   </Link>
                   <Link
-                    to="/"
+                    to="/blog"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                     onClick={() => {
                       setShowGalleryDropdown(false);
@@ -135,7 +135,7 @@ const SearchNavbar = ({ setCategoryFilter, setSearchQuery, postings }) => {
               {showCategoryDropdown && (
                 <div className="absolute bg-white mt-2 py-2 w-32 rounded shadow-lg">
                   <Link
-                    to="/"
+                    to="/blog"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                     onClick={() => handleCategoryFilter("Semua")}
                   >
@@ -144,7 +144,7 @@ const SearchNavbar = ({ setCategoryFilter, setSearchQuery, postings }) => {
                   {categories.map((category) => (
                     <Link
                       key={category}
-                      to={`/?category=${category}`}
+                      to={`/blog/?category=${category}`}
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                       onClick={() => handleCategoryFilter(category)}
                     >
